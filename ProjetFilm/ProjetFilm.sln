@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UWP", "UWP\UWP.csproj", "{C29F1C6D-8BA4-475C-B74F-58747E8B4F04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelObjet", "ModelObjet\ModelObjet.csproj", "{39B9E850-2F1D-4CD2-90E8-BF1D3CD48654}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModelObjet", "ModelObjet\ModelObjet.csproj", "{39B9E850-2F1D-4CD2-90E8-BF1D3CD48654}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{1152281B-1029-4F7E-A5A8-12593A7B6701}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +69,26 @@ Global
 		{39B9E850-2F1D-4CD2-90E8-BF1D3CD48654}.Release|x64.Build.0 = Release|Any CPU
 		{39B9E850-2F1D-4CD2-90E8-BF1D3CD48654}.Release|x86.ActiveCfg = Release|Any CPU
 		{39B9E850-2F1D-4CD2-90E8-BF1D3CD48654}.Release|x86.Build.0 = Release|Any CPU
+		{1152281B-1029-4F7E-A5A8-12593A7B6701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1152281B-1029-4F7E-A5A8-12593A7B6701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1152281B-1029-4F7E-A5A8-12593A7B6701}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{1152281B-1029-4F7E-A5A8-12593A7B6701}.Debug|ARM.Build.0 = Debug|Any CPU
+		{1152281B-1029-4F7E-A5A8-12593A7B6701}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{1152281B-1029-4F7E-A5A8-12593A7B6701}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{1152281B-1029-4F7E-A5A8-12593A7B6701}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1152281B-1029-4F7E-A5A8-12593A7B6701}.Debug|x64.Build.0 = Debug|Any CPU
+		{1152281B-1029-4F7E-A5A8-12593A7B6701}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1152281B-1029-4F7E-A5A8-12593A7B6701}.Debug|x86.Build.0 = Debug|Any CPU
+		{1152281B-1029-4F7E-A5A8-12593A7B6701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1152281B-1029-4F7E-A5A8-12593A7B6701}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1152281B-1029-4F7E-A5A8-12593A7B6701}.Release|ARM.ActiveCfg = Release|Any CPU
+		{1152281B-1029-4F7E-A5A8-12593A7B6701}.Release|ARM.Build.0 = Release|Any CPU
+		{1152281B-1029-4F7E-A5A8-12593A7B6701}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{1152281B-1029-4F7E-A5A8-12593A7B6701}.Release|ARM64.Build.0 = Release|Any CPU
+		{1152281B-1029-4F7E-A5A8-12593A7B6701}.Release|x64.ActiveCfg = Release|Any CPU
+		{1152281B-1029-4F7E-A5A8-12593A7B6701}.Release|x64.Build.0 = Release|Any CPU
+		{1152281B-1029-4F7E-A5A8-12593A7B6701}.Release|x86.ActiveCfg = Release|Any CPU
+		{1152281B-1029-4F7E-A5A8-12593A7B6701}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

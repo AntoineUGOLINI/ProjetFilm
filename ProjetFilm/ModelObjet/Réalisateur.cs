@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ModelObjet
 {
-    class Réalisateur
+   public class Réalisateur
     {
         public string NomRealisateur { get; set; }
         public string PhotoRealisateur { get; set; }
