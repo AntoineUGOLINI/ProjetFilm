@@ -7,5 +7,6 @@ namespace ModelObjet
         public int NbEntrees { get; set; }
         public string PhotoFilm { get; set; }
         public string TitreFilm { get; set; }
+        public List<Film> LesFilm { get; set; }
     }
 }
