@@ -34,17 +34,7 @@ namespace UWP
         //List<String> lesFilmsComedie;
         //List<String> lesFilmsAventure;
         //List<String> lesFilmsScienceFiction;
-        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void TextBlock_SelectionChanged_1(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             Acteur acteur1 = new Acteur()
             {
@@ -163,20 +153,28 @@ namespace UWP
             lesFilmsAventure.Add(film2);
             List<Film> lesFilmsScienceFiction = new List<Film>();
             lesFilmsScienceFiction.Add(film3);
-            dico.Add("Comédie",lesFilmsComedie);
+            dico = new Dictionary<string, List<Film>>();
+            dico.Add("Comédie", lesFilmsComedie);
             dico.Add("Aventure", lesFilmsAventure);
             dico.Add("Science Fiction", lesFilmsScienceFiction);
 
+            List<string> lesGenres = new List<string>();
+            lesGenres.Add("Comédie");
+            lesGenres.Add("Aventure");
+            lesGenres.Add("Science-fiction");
 
-
+            cboGenre.ItemsSource = lesGenres;
         }
 
-        private void ListView_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            
         }
 
-        private void Page_Loaded(object sender, RoutedEventArgs e)
+
+        
+
+        private void CboGenre_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
