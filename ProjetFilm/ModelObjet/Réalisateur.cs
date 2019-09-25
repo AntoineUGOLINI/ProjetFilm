@@ -9,6 +9,6 @@ namespace ModelObjet
         public string NomRealisateur { get; set; }
         public string PhotoRealisateur { get; set; }
         public string PrenomRealisateur { get; set; }
-        public List<Realisateur> LesRealisateur { get; set; }
+        //public List<Realisateur> LesRealisateur { get; set; }
     }
 }

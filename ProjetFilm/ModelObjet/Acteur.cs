@@ -9,10 +9,11 @@ namespace ModelObjet
         public string NomActeur { get; set; }
         public string PhotoActeur { get; set; }
         public string PrenomActeur { get; set; }
-        public List<Acteur> LesActeurs { get; set; }
-        public  void AjouterActeur(Acteur unActeur)
-        {
-            LesActeurs.Add(unActeur);
-        }
+        //public List<Acteur> LesActeurs { get; set; }
+        //public  void AjouterActeur(Acteur unActeur)
+        //{
+        //    LesActeurs.Add(unActeur);
+        //}
+        
     }
 }
