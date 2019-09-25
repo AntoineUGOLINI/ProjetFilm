@@ -156,7 +156,7 @@ namespace UWP
             dico = new Dictionary<string, List<Film>>();
             dico.Add("Comédie", lesFilmsComedie);
             dico.Add("Aventure", lesFilmsAventure);
-            dico.Add("Science Fiction", lesFilmsScienceFiction);
+            dico.Add("Science-Fiction", lesFilmsScienceFiction);
 
             List<string> lesGenres = new List<string>();
             lesGenres.Add("Comédie");
@@ -176,7 +176,9 @@ namespace UWP
 
         private void CboGenre_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            string d;
+            d = cboGenre.SelectedItem.ToString();
+            lvListeFilm.ItemsSource = dico[d];
         }
     }
 }

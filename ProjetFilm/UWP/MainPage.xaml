@@ -13,11 +13,37 @@
         <TextBlock HorizontalAlignment="Left" Margin="252,266,0,0" Text="Liste des films" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="130"/>
         <ComboBox Name="cboGenre" Margin="790,173,0,0" Width="300" Height="27" SelectionChanged="CboGenre_SelectionChanged"/>
 
-        <ListView SelectionChanged="ListView_SelectionChanged" Margin="132,326,792,610"/>
+        <ListView  Name="lvListeFilm" SelectionChanged="ListView_SelectionChanged" Margin="132,326,792,610">
+            <Image Source="{Binding PhotoFilm}" Width="90" Height="90"></Image>
+
+            <Border VerticalAlignment="Bottom"
+                                    Height="15" Background="Black" Opacity="0.8">
+                <TextBlock Text="{Binding NomFilm}"
+                                               HorizontalAlignment="Center"
+                                           RequestedTheme="Dark" VerticalAlignment="Center" 
+                                           FontSize="15" />
+            </Border>
+        </ListView>
         <TextBlock HorizontalAlignment="Left" Margin="817,266,0,0" Text="Liste des Acteurs"
                    FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="222"/>
-        <GridView Name="gvListeActeurs"
-                  Margin="750,326,48,544"/>
+        <GridView Name="gvListeActeurs" Margin="750,326,48,544"
+            SelectionMode="Multiple">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Image Source="{Binding PhotoFilm}" Width="90" Height="90"
+                                   Stretch="Fill" />
+                        <Border VerticalAlignment="Bottom"
+                                    Height="15" Background="Black" Opacity="0.8">
+                            <TextBlock Text="{Binding NomFilm}"
+                                               HorizontalAlignment="Center"
+                                           RequestedTheme="Dark" VerticalAlignment="Center" 
+                                           FontSize="15" />
+                        </Border>
+                    </Grid>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
         <TextBlock HorizontalAlignment="Left" Margin="181,500,0,0" Text="Ajouter un nouveau genre" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="256"/>
         <Button Name="btnAjoutGenre" Content="Ajouter un genre" Margin="66,564,0,0" VerticalAlignment="Top" Height="37" Width="488"/>
         <TextBlock HorizontalAlignment="Left" Margin="570,496,0,0" Text="Saisir le nom du film" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="202"/>
