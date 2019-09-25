@@ -6,9 +6,29 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    <Grid>
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Page_Loaded">
+    <Grid RenderTransformOrigin="0.499,0.506">
+        <TextBlock HorizontalAlignment="Left" FontSize="40" Margin="656,54,0,0" Text="Projet Film" TextWrapping="Wrap" VerticalAlignment="Top" Height="59" Width="194"/>
+        <TextBlock HorizontalAlignment="Left" Margin="210,180,0,0" Text="Choix du genre du film" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="274"/>
+        <TextBlock HorizontalAlignment="Left" Margin="252,266,0,0" Text="Liste des films" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="130"/>
+        <ComboBox Name="cboGenre" Margin="790,173,0,0" Width="300" Height="27"/>
+        <ListView SelectionChanged="ListView_SelectionChanged" Margin="132,326,792,610"/>
+        <TextBlock HorizontalAlignment="Left" Margin="817,266,0,0" Text="Liste des Acteurs"
+                   FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="222"/>
+        <GridView Name="gvListeActeurs" Margin="750,326,48,544"/>
+        <TextBlock HorizontalAlignment="Left" Margin="181,500,0,0" Text="Ajouter un nouveau genre" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="256"/>
+        <Button Content="Ajouter un genre" Margin="66,564,0,0" VerticalAlignment="Top" Height="37" Width="488"/>
+        <TextBlock HorizontalAlignment="Left" Margin="570,496,0,0" Text="Saisir le nom du film" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="202"/>
+        <TextBox Name="txtNomFilm"  HorizontalAlignment="Left" Margin="568,527,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="397"/>
+        <TextBlock HorizontalAlignment="Left" Margin="568,573,0,0" Text="Saisir le nombre d'entrées du film" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="316"/>
+        <TextBox Name="txtNbEntreeFilm" HorizontalAlignment="Left" Margin="568,604,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="397"/>
+        <TextBlock HorizontalAlignment="Left" Margin="568,653,0,0" Text="Saisir le nom du réalisateur" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="41" Width="316"/>
+        <TextBox Name="txtNomRealisateur" HorizontalAlignment="Left" Margin="568,684,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="397"/>
+        <TextBlock HorizontalAlignment="Left" Margin="568,723,0,0" Text="Saisir le prénom du réalisateur" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="277"/>
+        <TextBox Name="txtPrenomRealisateur" HorizontalAlignment="Left" Margin="568,755,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="397"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1002,462,0,0" Text="Ajouter un nouveau film" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="308"/>
+        <GridView Name="gv" Margin="1002,514,48,258" BorderBrush="Black"/>
+        <Button Name="btnAjoutFilm" Content="Ajouter un film" Margin="1018,791,0,0" VerticalAlignment="Top" Width="372"/>
 
     </Grid>
 </Page>
