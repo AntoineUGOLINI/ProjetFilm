@@ -156,7 +156,7 @@ namespace UWP
             dico = new Dictionary<string, List<Film>>();
             dico.Add("Comédie", lesFilmsComedie);
             dico.Add("Aventure", lesFilmsAventure);
-            dico.Add("Science-Fiction", lesFilmsScienceFiction);
+            dico.Add("Science-fiction", lesFilmsScienceFiction);
 
             List<string> lesGenres = new List<string>();
             lesGenres.Add("Comédie");
@@ -168,7 +168,10 @@ namespace UWP
 
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
+            if (lvListeFilm.SelectedItem != null)
+            {
+                gvListeActeurs.ItemsSource = (lvListeFilm.SelectedItem as Film).LesActeurs;
+            }
         }
 
 
@@ -176,9 +179,32 @@ namespace UWP
 
         private void CboGenre_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            string d;
-            d = cboGenre.SelectedItem.ToString();
-            lvListeFilm.ItemsSource = dico[d];
+            if(cboGenre.SelectedItem != null)
+            {
+                string leGenre = cboGenre.SelectedItem.ToString();
+                lvListeFilm.ItemsSource = null;
+                lvListeFilm.ItemsSource = dico[leGenre];
+            }
+            //if(lvListeFilm.SelectedItem != null)
+            //{
+            //    gvListeActeurs.ItemsSource = (lvListeFilm.SelectedItem as Film).LesActeurs;
+            //}
+        }
+
+        private void GvListeActeurs_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //if (lvListeFilm.SelectedItem != null)
+            //{
+            //    gvListeActeurs.ItemsSource = (lvListeFilm.SelectedItem as Film).LesActeurs;
+            //}
+        }
+
+        private void BtnAjoutGenre_Click(object sender, RoutedEventArgs e)
+        {
+            if (dico.ContainsKey(cboGenre.SelectedItem.ToString()))
+            {
+               
+            }
         }
     }
 }

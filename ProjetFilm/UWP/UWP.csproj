@@ -130,6 +130,24 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\De Niro.png" />
+    <Content Include="Images\Depp.png" />
+    <Content Include="Images\Di Caprio.png" />
+    <Content Include="Images\Film n°1.png" />
+    <Content Include="Images\Film n°2.png" />
+    <Content Include="Images\Film n°3.png" />
+    <Content Include="Images\Jolie.png" />
+    <Content Include="Images\Kidman.png" />
+    <Content Include="Images\Lawrence.png" />
+    <Content Include="Images\NewFilm.png" />
+    <Content Include="Images\NewRealisateur.png" />
+    <Content Include="Images\Nicholson.png" />
+    <Content Include="Images\Pitt.png" />
+    <Content Include="Images\Portman.png" />
+    <Content Include="Images\Scorsese.png" />
+    <Content Include="Images\Spielberg.png" />
+    <Content Include="Images\Stone.png" />
+    <Content Include="Images\Tarantino.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
